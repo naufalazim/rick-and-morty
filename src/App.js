@@ -6,10 +6,11 @@ import {useEffect, useState} from 'react';
 
 function App() {
 
+  //set queries of character:
   const [characters, setCharacters] = useState([])
-  
   //search button:
   const [query, setQuery] = useState("")
+
 
   useEffect(() => {
     const fetchData = async() => {
@@ -24,9 +25,13 @@ function App() {
     fetchData()
   }, [query])
     
+
+
   return (
     <div className="App">
-     <h1 class="
+
+    <div>
+    <h1 class="
      text-5xl 
      font-medium
      text-gray-900 
@@ -36,6 +41,11 @@ function App() {
      <span class="text-gray-900 font-VT323 ">
       Rick and morthy
      </span></h1>
+
+     <p className='mt-4 mb-3 text-gray-500 dark:text-gray-400 font-bold text-xs'>Created by ❤️Naufal Azim</p>
+    </div>
+
+
 
       <div className='px-5'>
 
@@ -53,16 +63,16 @@ function App() {
 
       </div>
 
-        <div className='flex justify-between grid grid-cols-4 gap-4 mx-auto'>
+        <div className='flex justify-between grid grid-cols-2 gap-4 mx-auto sm:grid-cols-4'>
 
           {characters.map(character => (
-            <div className='max-w-sm rounded overflow-hidden shadow-lg'>
+            <div className='w-full max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700'>
 
-                <div>
-                  <img src={character.image} alt={character.name} />
+                <div className='flex justify-center px-4 pt-4'>
+                  <img className='mb-3 w-44 h-44 rounded-full shadow-lg' src={character.image} alt={character.name} />
                 </div>
 
-                <div className='font-bold py-4'>
+                <div className='font-bold py-4 '>
                 {character.name}
                 </div>
 
