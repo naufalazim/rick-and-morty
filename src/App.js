@@ -45,8 +45,6 @@ function App() {
      <p className='mt-4 mb-3 text-gray-500 dark:text-gray-400 font-bold text-xs'>Created by ❤️Naufal Azim</p>
     </div>
 
-
-
       <div className='px-5'>
 
       {/* Search button  */}
@@ -66,7 +64,7 @@ function App() {
         <div className='flex justify-between grid grid-cols-2 gap-4 mx-auto sm:grid-cols-4'>
 
           {characters.map(character => (
-            <div className='w-full max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700'>
+            <div className='w-full max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-white-800 dark:border-gray-700'>
 
                 <div className='flex justify-center px-4 pt-4'>
                   <img className='mb-3 w-44 h-44 rounded-full shadow-lg' src={character.image} alt={character.name} />
