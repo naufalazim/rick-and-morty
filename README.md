@@ -1,6 +1,8 @@
 # Rick & Morty!
 
-This project was bootstrapped with [Create React App] and Tailwind CSS
+Tech Stacks: 
+<li>Reactjs</li>
+<li>TailwindCSS</li>
 
 ### `npm start`
 
