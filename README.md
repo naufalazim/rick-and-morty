@@ -1,6 +1,6 @@
-# Rick & Morty!
+# `Rick & Morty!`
 
-Tech Stacks: 
+### `Tech Stacks:`
 <li>Reactjs</li>
 <li>TailwindCSS</li>
 
