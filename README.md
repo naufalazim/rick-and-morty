@@ -2,9 +2,8 @@
 > I developed by Reactjs and use API to get data.
 
 ### Link API
-```
 https://rickandmortyapi.com/documentation
-```
+
 
 ### `Tech Stacks:`
 
